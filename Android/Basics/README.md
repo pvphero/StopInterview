@@ -9,6 +9,7 @@
 - [2.安卓的事件分发机制](#2-安卓的事件分发机制)
 - [3.Android重要术语解释](#3-android重要术语解释)
 - [4.Android启动模式](#4-android启动模式)
+- [5.Android IPC:Binder原理](#5-android-ipc:binder原理)
 
 </details>  
 
