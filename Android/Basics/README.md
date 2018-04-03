@@ -5,15 +5,15 @@
 
 ## 内容目录  
 
-- [1.了解Fragment么,说说Fragmment的生命周期](#了解fragment么,说说fragmment的生命周期)
-- [2.安卓的事件分发机制](#安卓的事件分发机制)
-- [3.Android重要术语解释](#android重要术语解释)
+- [1.了解Fragment么,说说Fragmment的生命周期](#1-了解fragment么,说说fragmment的生命周期)
+- [2.安卓的事件分发机制](#2-安卓的事件分发机制)
+- [3.Android重要术语解释](#3-android重要术语解释)
 
 </details>  
 
 ## 知识点
 
-### 了解Fragment么,说说Fragmment的生命周期
+### 1 了解Fragment么,说说Fragmment的生命周期
 <details>
 <summary>展开查看答案</summary>  
 
@@ -21,7 +21,7 @@
 ![图片](https://dn-coding-net-production-pp.qbox.me/de6215bc-2e4d-43db-bc39-45526fe33a01.png)  
 </details>  
 
-### 安卓的事件分发机制
+### 2 安卓的事件分发机制
 <details>
 <summary>展开查看答案</summary>  
 
@@ -63,7 +63,7 @@
     
     </details>
 
-### Android重要术语解释
+### 3 Android重要术语解释
 
 * 1.ActivityManagerServices，简称AMS，服务端对象，负责系统中所有Activity的生命周期
 * 2.ActivityThread，App的真正入口。当开启App之后，会调用main()开始运行，开启消息循环队列，这就是传说中的UI线程或者叫主线程。与ActivityManagerServices配合，一起完成Activity的管理工作
