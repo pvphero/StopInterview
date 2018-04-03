@@ -9,6 +9,7 @@
 - [2.安卓的事件分发机制](#2-安卓的事件分发机制)
 - [3.Android重要术语解释](#3-android重要术语解释)
 - [4.Android启动模式](#4-android启动模式)
+- [5.Android IPC:Binder原理](#5-android-ipc:binder原理)
 
 </details>  
 
@@ -92,7 +93,23 @@
 
 </details>
 
+### 5 Android IPC:Binder原理
 
+<details>
+<summary>展开查看答案</summary>
+
+1. 在Activity和Service进行通讯的时候，用到了Binder。
+  1. 当属于同个进程我们可以继承Binder然后在Activity中对Service进行操作
+  2. 当不属于同个进程，那么要用到AIDL让系统给我们创建一个Binder，然后在Activity中对远端的Service进行操作。
+2. 系统给我们生成的Binder：
+  1. Stub类中有:接口方法的id，有该Binder的标识，有asInterface(IBinder)(让我们在Activity中获取实现了Binder的接口，接口的实现在Service里，同进程时候返回Stub否则返回Proxy)，有onTransact()这个方法是在不同进程的时候让Proxy在Activity进行远端调用实现Activity操作Service
+  2. Proxy类是代理，在Activity端，其中有:IBinder mRemote(这就是远端的Binder)，两个接口的实现方法不过是代理最终还是要在远端的onTransact()中进行实际操作。
+3. 哪一端的Binder是副本，该端就可以被另一端进行操作，因为Binder本体在定义的时候可以操作本端的东西。所以可以在Activity端传入本端的Binder，让Service端对其进行操作称为Listener，可以用RemoteCallbackList这个容器来装Listener，防止Listener因为经历过序列化而产生的问题。
+4. 当Activity端向远端进行调用的时候，当前线程会挂起，当方法处理完毕才会唤醒。
+5. 如果一个AIDL就用一个Service太奢侈，所以可以使用Binder池的方式，建立一个AIDL其中的方法是返回IBinder，然后根据方法中传入的参数返回具体的AIDL。
+6. IPC的方式有：Bundle（在Intent启动的时候传入，不过是一次性的），文件共享(对于SharedPreference是特例，因为其在内存中会有缓存)，使用Messenger(其底层用的也是AIDL，同理要操作哪端，就在哪端定义Messenger)，AIDL，ContentProvider(在本进程中继承实现一个ContentProvider，在增删改查方法中调用本进程的SQLite，在其他进程中查询)，Socket
+
+</details>
 
 
 **[⬆ 回到顶部](#android基础)**
