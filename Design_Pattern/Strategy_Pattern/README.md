@@ -1,9 +1,9 @@
 根据极客学院的教程学习总结一下设计模式的内容
-###前言：
+### 前言:  
 设计模式是遇到问题总结的经验，不是代码，是某类问题的通用设计解决方案
-###目的：
+### 目的：  
 提高 维护性，扩展性，变化性，复杂度变成O(N)
-###策略模式：
+### 策略模式：  
 分别封装行为接口，实现算法组，超类里放行为接口对象，在子类具体定义行为对象。
 原则：分离变化部分，封装接口，基于接口编程各种功能。
 特点：
@@ -14,13 +14,13 @@
 1-分析项目中变化部分和不变部分
 2-多用组合少用继承
 3-把行为进行类组合，而不是行为的集成
-###场景：
+### 场景：  
 继承提高的代码的复用性，但是增加子类的复杂度，例如父类增加某些属性，并不是其他子类需要，影响所有子类。
 如果把一些行为实现在子类里，又降低代码的复用性。
-###面向对象的问题：
+### 面向对象的问题：  
 继承提高的代码的复用性，但是增加子类的复杂度，例如父类增加某些属性，并不是其他子类需要，影响所有子类。
 如果把一些行为放在子类里，又降低代码的复用性。
-##结构
+## 结构  
 ![项目结构](https://img-blog.csdn.net/20180330163146251?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpbnhpbjYxOTM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ``` Java
@@ -61,7 +61,7 @@ public class BadFly implements FlyBehavior{
 
 ```
 
-```
+``` Java
 package com.iolo.bc.CeLue.flyBehavior;
 
 /**
@@ -76,7 +76,7 @@ public class NotFly implements FlyBehavior{
 
 ```
 
-```
+``` Java
 package com.iolo.bc.CeLue.quackBehavior;
 
 /**
@@ -88,7 +88,7 @@ public interface QuackBehavior {
 
 ```
 
-```
+``` Java
 package com.iolo.bc.CeLue.quackBehavior;
 
 /**
@@ -103,7 +103,7 @@ public class GoodQuack implements QuackBehavior{
 
 ```
 
-```
+``` Java
 package com.iolo.bc.CeLue.quackBehavior;
 
 /**
@@ -118,7 +118,7 @@ public class BadQuack implements QuackBehavior{
 
 ```
 
-```
+``` Java
 package com.iolo.bc.CeLue.quackBehavior;
 
 /**
@@ -133,7 +133,7 @@ public class NotQuack implements QuackBehavior{
 
 ```
 
-```
+``` Java
 package com.iolo.bc.CeLue.duck;
 
 import com.iolo.bc.CeLue.flyBehavior.FlyBehavior;
@@ -182,7 +182,7 @@ public abstract class Duck {
 
 ```
 
-```
+``` Java
 package com.iolo.bc.CeLue.duck;
 
 import com.iolo.bc.CeLue.flyBehavior.GoodFly;
@@ -206,7 +206,7 @@ public class GreenDuck extends Duck {
 
 ```
 
-```
+``` Java
 package com.iolo.bc.CeLue.duck;
 
 import com.iolo.bc.CeLue.flyBehavior.BadFly;
@@ -230,7 +230,7 @@ public class RedDuck extends Duck {
 
 ```
 
-```
+``` Java
 package com.iolo.bc.CeLue;
 
 import com.iolo.bc.CeLue.duck.GreenDuck;
@@ -267,5 +267,5 @@ public class Test {
 
 ```
 
-###运行结果
+### 运行结果
 ![运行结果](https://img-blog.csdn.net/20180330164019738?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpbnhpbjYxOTM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
