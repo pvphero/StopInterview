@@ -10,7 +10,9 @@
 * [OperationSystem]()
 * [ComputerArchitecture]()
 * [Network]()
-* [Algorithm]()
+* [Algorithm]
+
+
 # J2SE
 > 1.J2SE什么?
 
@@ -19,10 +21,9 @@ J2SE是Java To Standard Edition,J2SE就是Java2的标准版，主要用于桌面
 
 # J2EE
 # DesignPattern
+> 1.策略模式是什么
 
-1 2.策略模式是什么
-
-[连接](https://github.com/StopWorld/StopInterview/tree/master/Design_Pattern/Strategy_Pattern)
+[策略模式是什么](https://github.com/StopWorld/StopInterview/tree/master/Design_Pattern/Strategy_Pattern)
 
 # JVM
 # Android
