@@ -74,4 +74,19 @@
 * 7.ActivityRecord，ActivityStack的管理对象，每个Activity在AMS对应一个ActivityRecord，来记录Activity的状态以及其他的管理信息。其实就是服务器端的Activity对象的映像。
 * 8.TaskRecord，AMS抽象出来的一个“任务”的概念，是记录ActivityRecord的栈，一个“Task”包含若干个ActivityRecord。AMS用TaskRecord确保Activity启动和退出的顺序。如果你清楚Activity的4种launchMode，那么对这个概念应该不陌生。
 
+### 4 Android启动模式
+
+<details>
+<summary>展开查看答案</summary>
+
+1. standard:默认标准模式，每启动一个都会创建一个实例
+2. singleTop：栈顶复用，如果在栈顶就调用onNewIntent复用，从onResume()开始
+3. singleTask：栈内复用，本栈内只要用该类型Activity就会调到栈顶复用，从onResume()开始
+4. singleInstance：单例模式，除了3中特性，系统会单独给该Activity创建一个栈
+
+</details>
+
+
+
+
 **[⬆ 回到顶部](#android基础)**
