@@ -11,8 +11,9 @@
 
 ### 1.了解Fragment么,说说Fragmment的生命周期  
 <details>
-<summary>展开查看答案</summary>
-一张图概括,详细请看博客链接[Fragment生命周期](http://pvphero.github.io/2018/03/13/20180313AndroidInterViewFragment/)
+<summary>展开查看答案</summary>  
+
+一张图概括,详细请看博客链接[Fragment生命周期](http://pvphero.github.io/2018/03/13/20180313AndroidInterViewFragment/)  
 ![图片](https://dn-coding-net-production-pp.qbox.me/de6215bc-2e4d-43db-bc39-45526fe33a01.png)  
 </details>
 
