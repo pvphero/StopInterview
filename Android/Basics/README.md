@@ -61,8 +61,6 @@
     > [Android-三张图搞定Touch事件传递机制](http://hanhailong.com/2015/09/24/Android-三张图搞定Touch事件传递机制/)  
     
     </details>
-     
-
-
-
+    
+    
 **[⬆ 回到顶部](#Android基础)**
