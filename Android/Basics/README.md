@@ -44,15 +44,19 @@
      
     - 三张效果图辅助理解  
     **View不处理事件流程图（View没有消费事件)**
-    ![](https://ws4.sinaimg.cn/large/006tKfTcly1fpzlduduzzj31ga0y8jxd.jpg)
+    ![](https://ws4.sinaimg.cn/large/006tKfTcly1fpzlduduzzj31ga0y8jxd.jpg)  
+    
     
     **View处理事件**  
-    ![](https://ws3.sinaimg.cn/large/006tKfTcly1fpzlek9w6cj31gs0xygrl.jpg)
+    ![](https://ws3.sinaimg.cn/large/006tKfTcly1fpzlek9w6cj31gs0xygrl.jpg)  
+    
     
     **事件拦截**  
-    ![](https://ws1.sinaimg.cn/large/006tKfTcly1fpzlexpyxjj31ge0xkn31.jpg)
+    ![](https://ws1.sinaimg.cn/large/006tKfTcly1fpzlexpyxjj31ge0xkn31.jpg)  
     
-    > [Android-三张图搞定Touch事件传递机制](http://hanhailong.com/2015/09/24/Android-三张图搞定Touch事件传递机制/)
+    
+    > [Android-三张图搞定Touch事件传递机制](http://hanhailong.com/2015/09/24/Android-三张图搞定Touch事件传递机制/)  
+    
     </details>  
 
 
