@@ -8,6 +8,7 @@
 - [1.了解Fragment么,说说Fragmment的生命周期](#1-了解fragment么,说说fragmment的生命周期)
 - [2.安卓的事件分发机制](#2-安卓的事件分发机制)
 - [3.Android重要术语解释](#3-android重要术语解释)
+- [4.Android启动模式](#4-android启动模式)
 
 </details>  
 
