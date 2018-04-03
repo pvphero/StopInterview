@@ -13,7 +13,7 @@
 # J2SE
 > 1.J2SE什么?
 
-J2SE是Java To Standard Edition,J2SE就是Java2的标准版，主要用于桌面应用软件的编程.
+J2SE是Java 2 Standard Edition,J2SE就是Java2的标准版，主要用于桌面应用软件的编程.
 # J2EE
 # JVM
 # Android
