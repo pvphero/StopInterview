@@ -1,12 +1,15 @@
 # Android基础
 
 <details>
-<summary>目录</summary>
-## 内容目录
+<summary>目录</summary>  
+
+## 内容目录  
+
 - [1.了解Fragment么,说说Fragmment的生命周期](#1.了解Fragment么,说说Fragmment的生命周期)
 - [2.安卓的事件分发机制](#2.安卓的事件分发机制)
 
-</details>
+</details>  
+
 ## 知识点
 
 ### 1.了解Fragment么,说说Fragmment的生命周期  
@@ -15,7 +18,7 @@
 
 一张图概括,详细请看博客链接[Fragment生命周期](http://pvphero.github.io/2018/03/13/20180313AndroidInterViewFragment/)  
 ![图片](https://dn-coding-net-production-pp.qbox.me/de6215bc-2e4d-43db-bc39-45526fe33a01.png)  
-</details>
+</details>  
 
 ### 2.安卓的事件分发机制  
 <details>
@@ -50,7 +53,7 @@
     ![](https://ws1.sinaimg.cn/large/006tKfTcly1fpzlexpyxjj31ge0xkn31.jpg)
     
     > [Android-三张图搞定Touch事件传递机制](http://hanhailong.com/2015/09/24/Android-三张图搞定Touch事件传递机制/)
-    </details>
+    </details>  
 
 
 
